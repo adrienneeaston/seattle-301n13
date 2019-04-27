@@ -51,8 +51,8 @@ function fetchCityData(event) {
       getResource('weather', location);
       getResource('movies', location);
       getResource('yelp', location);
-      getResource('meetups', location);
       getResource('trails', location);
+      getResource('events', location);
     })
     .catch(error => {
       compileTemplate([error], 'error-container', 'error-template');

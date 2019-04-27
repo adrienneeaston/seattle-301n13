@@ -33,12 +33,12 @@
     </li>
   </script>
 
-  <!-- Template for Meetup data -->
-  <script type="text/x-handlebars-template" id="meetups-results-template">
+  <!-- Template for Eventbrite data -->
+  <script type="text/x-handlebars-template" id="events-results-template">
     <li>
       <a href="{{ link }}">{{ name }}</a>
-      <p>Hosted by: {{ host }}</p>
       <p>Event Date: {{ event_date }}</p>
+      <p>{{ summary }}</p>
     </li>
   </script>
 
@@ -104,10 +104,10 @@
         </ul>
       </section>
 
-      <!-- Section for Meetup data -->
+      <!-- Section for Eventbrite data -->
       <section>
-        <h3>Results from the Meetup API</h3>
-        <ul class="meetups-results"></ul>
+        <h3>Results from the Eventbrite API</h3>
+        <ul class="events-results"></ul>
       </section>
 
       <!-- Section for movie data -->
